@@ -1,0 +1,41 @@
+
+--Exercice 1--
+
+git config --global user.name "monnom"
+git config --global user.name
+git config --global user.email "monemail@gmail.com"
+git config --global user.email
+
+
+--Exercice 2--
+
+1. git init
+2. git status
+3. nano .gitignore
+4. touch fich1.c; git add fich1.c; git status
+5. git commit -m "ajout 1"
+6. touch fich2.c fich3.c; git add .
+7. git commit -m "ajout 2"; git status
+8. git log
+9. nano fich1.c
+10. git diff
+11. git log -p
+
+[Connexion Serveur]
+git remote add origin https://github.com/Theo18004/TP_GIT.git
+git push -u origin master
+
+12. touch fich4.c; git add fich4.c
+13. git status
+14. echo "modif" >> fich4.c; mkdir dossier_test; touch dossier_test/fich5.c; git add .; git commit -m "ajout fich4 et fich5"
+15. git diff --staged
+16. rm -rf dossier_test
+17. git rm dossier_test/fich5.c; git restore --staged dossier_test/fich5.c
+18. git restore --staged fich4.c
+19. git branch "Version_bis"
+20. git branch; git checkout Version_bis
+21. touch fich6.c; echo "nouvelle ligne" >> fich1.c; git add .
+22. git commit -m "Travail sur version bis"
+23. git checkout master; git merge Version_bis
+24. git branch -d Version_bis
+25. git push
