@@ -35,7 +35,20 @@ git push -u origin master
 19. git branch "Version_bis"
 20. git branch; git checkout Version_bis
 21. touch fich6.c; echo "nouvelle ligne" >> fich1.c; git add .
-22. git commit -m "Travail sur version bis"
+22. git commit -m "Travail sur version bis" 
 23. git checkout master; git merge Version_bis
 24. git branch -d Version_bis
 25. git push
+
+--Exercice 3--
+
+1. git clone [lien du depot de mon voisin].
+
+2. Lorsque je veux faire un git push cela me dit Permission denied car je ne suis pas en collaborateur sur le projet de mon voisin.
+
+3. Mon voisin doit m'ajouter en collaborateur ou alors faire un Fork donc travailler sur la copie depuis mon PC puis faire un pull request a mon voisins.
+
+
+-- Retour vers le Futur -- 
+
+
